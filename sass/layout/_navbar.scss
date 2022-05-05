@@ -1,0 +1,94 @@
+@use "./mixins";
+@use "../core/variables" as v;
+
+
+.site-logo {
+  width: 170px;
+}
+
+header {
+  width: 100%;
+  height: v.$nav-height;
+  line-height: v.$nav-height;
+  text-align: center;
+  
+  background-color: v.$primary-color;
+  border: 1px solid #ddd;
+}
+
+.brand {
+  width: auto;
+  height: 100%;
+  float: left;
+  margin: 0 0 0 5%;
+}
+
+.menu {
+  width: 60%;
+  height: 100%;
+  float: right;
+
+  ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    
+    a {
+      padding: 0 10px;
+      height: inherit;
+      color: #222;
+      display: inline-block;
+      &:hover {
+        background-color: #222;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#menuToggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .menu {
+    width: 100%;
+    height: auto;
+    ul {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s;
+      a {
+        text-align: left;
+        width: 100%;
+        height: v.$nav-height;
+        background-color: v.$primary-color;
+        padding: 2px 0px 2px 5%;
+      }
+      
+    }
+}
+
+.menu-icon {
+    width: 100px;
+    height: inherit;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 60px;
+}
+
+
+#menuToggle:checked ~ ul {
+    max-height: 200px;
+}
+.menu-icon i {
+    font-size: 1.7em;
+}  
+}

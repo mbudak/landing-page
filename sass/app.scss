@@ -1,0 +1,24 @@
+// Core files
+@import "./core/all";
+@import "./layout/all";
+@import url("./base/_all.scss");
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.selector {
+    color: red;
+    
+    @include respond-to('small') {
+      color: blue;
+    }
+
+    @include respond-to('medium') {
+        color: purple;
+    }
+
+    
+  }
+
+  
