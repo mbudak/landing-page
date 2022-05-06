@@ -1,0 +1,13 @@
+@use "../core/variables" as v;
+
+footer {
+    position: sticky;
+    // we dont need on first view
+    margin-top: calc(100vh + 40px);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: v.$primary-color;
+    min-height: 60px;;
+    
+}
