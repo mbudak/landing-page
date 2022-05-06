@@ -222,13 +222,11 @@ h1 {
 
 .hero__title {
   position: absolute;
-  bottom: 25vh;
-  left: 24vw;
-  right: 24vw;
+  top: 7vh;
   z-index: 1;
+  width: 100%;
   opacity: 0;
-  font-size: 60px;
-  line-height: 72px;
+  font-size: 10vw;
   font-weight: 900;
   text-align: center;
   color: #000;
@@ -237,26 +235,27 @@ h1 {
 
 @media screen and (min-width: 768px) {
   .hero__title {
-    bottom: 30vh;
-    font-size: 96px;
-    line-height: 108px;
+    top: 1vh;
   }
 }
 .hero__subtitle {
   position: absolute;
-  bottom: 25vh;
-  left: 24vw;
-  right: 24vw;
   color: #03045e;
+  top: 20vh;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 32px;
+  font-size: 5vw;
+  padding: 20px 10px;
   text-align: center;
-  background-color: #edede9;
-  border-radius: 5px;
-  padding: 110px 20px 10px 20px;
+  background-color: #ccd5ae;
+  border: 2px dashed #444;
+  width: 100%;
 }
 
+@media screen and (min-width: 767px) {
+  .hero__subtitle {
+    top: 30vh;
+  }
+}
 /**
 * Animation 
 */
