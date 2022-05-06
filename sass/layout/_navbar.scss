@@ -6,12 +6,17 @@
   width: 170px;
 }
 
+.navigation{
+  max-width: 992px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 header {
   width: 100%;
   height: v.$nav-height;
   line-height: v.$nav-height;
   text-align: center;
-  
   background-color: v.$primary-color;
   border: 1px solid #ddd;
 }
