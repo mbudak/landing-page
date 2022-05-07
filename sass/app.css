@@ -172,6 +172,7 @@ footer {
 
 .project-img {
   max-width: 420px;
+  padding: 20px;
 }
 
 .masonry {
@@ -371,6 +372,7 @@ footer {
 
 .project-img {
   max-width: 420px;
+  padding: 20px;
 }
 
 .masonry {
@@ -647,7 +649,7 @@ h1 {
   }
 }
 .contact {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 .contact ul li {
@@ -661,6 +663,11 @@ h1 {
   filter: drop-shadow(1px 5px 15px #666);
 }
 
+@media only screen and (max-width: 992px) {
+  .contact {
+    font-size: small;
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
 }

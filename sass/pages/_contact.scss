@@ -1,7 +1,7 @@
 @use "../layout/mixins";
 
 .contact {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     ul {
         li {
             padding: 10px 0;
@@ -12,6 +12,11 @@
         width: auto;
         /* For fun I just added a shadow for transparent image*/
         filter: drop-shadow(1px 5px 15px #666);
+    }
+
+    @media only screen and (max-width: 992px) {
+        font-size: small;
+        
     }
 
     
