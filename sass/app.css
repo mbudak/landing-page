@@ -250,6 +250,7 @@ figcaption {
   font-size: medium;
   line-height: 40px;
   border-right: 6px solid #023047;
+  margin: 5px;
   background-color: #f6bd60;
 }
 
@@ -263,6 +264,7 @@ figcaption {
   font-size: medium;
   line-height: 40px;
   border-right: 6px solid #023047;
+  margin: 5px;
   background-color: #393d3f;
   color: #fff;
 }
@@ -277,6 +279,7 @@ figcaption {
   font-size: medium;
   line-height: 40px;
   border-right: 6px solid #023047;
+  margin: 5px;
   background-color: #386641;
   color: #fff;
 }
@@ -291,6 +294,7 @@ figcaption {
   font-size: medium;
   line-height: 40px;
   border-right: 6px solid #023047;
+  margin: 5px;
   background-color: #bc4749;
   color: #fff;
 }
@@ -305,6 +309,7 @@ figcaption {
   font-size: medium;
   line-height: 40px;
   border-right: 6px solid #023047;
+  margin: 5px;
   background-color: #ff9e00;
 }
 
