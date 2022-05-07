@@ -241,7 +241,6 @@ figcaption {
 }
 
 .btn-primary {
-  background-color: #f6bd60;
   border: 1px solid #444;
   width: 200px;
   height: 40px;
@@ -251,6 +250,62 @@ figcaption {
   font-size: medium;
   line-height: 40px;
   border-right: 6px solid #023047;
+  background-color: #f6bd60;
+}
+
+.btn-secondary {
+  border: 1px solid #444;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-size: medium;
+  line-height: 40px;
+  border-right: 6px solid #023047;
+  background-color: #393d3f;
+  color: #fff;
+}
+
+.btn-success {
+  border: 1px solid #444;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-size: medium;
+  line-height: 40px;
+  border-right: 6px solid #023047;
+  background-color: #386641;
+  color: #fff;
+}
+
+.btn-danger {
+  border: 1px solid #444;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-size: medium;
+  line-height: 40px;
+  border-right: 6px solid #023047;
+  background-color: #bc4749;
+  color: #fff;
+}
+
+.btn-warning {
+  border: 1px solid #444;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-size: medium;
+  line-height: 40px;
+  border-right: 6px solid #023047;
+  background-color: #ff9e00;
 }
 
 .site-logo {
