@@ -1,16 +1,8 @@
+@use "../layout/mixins";
 @use "./variables" as v;
-
-.btn {
-    border: 1px solid #444;
-    width: 200px;
-    height: 40px;    
-    text-align: center;
-    border-radius: 4px;
-    font-size: medium;
-    line-height: 40px;
-}
 
 .btn-primary {
     background-color: v.$primary-color;
-    
+    @include btn;
+
 }
