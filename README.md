@@ -10,5 +10,9 @@ https://mbudak.github.io/landing-page
 
 `Some sources from useful websites`
 
-https://storyset.com/test
+Design sources
+https://storyset.com
+https://www.uplabs.com/
+
+
 
