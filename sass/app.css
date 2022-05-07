@@ -54,6 +54,232 @@ a {
   text-decoration: none;
 }
 
+@-webkit-keyframes glitch {
+  0% {
+    -webkit-clip-path: var(--clip-one);
+            clip-path: var(--clip-one);
+  }
+  2%, 8% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  6% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  9% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(0, 0);
+  }
+  10% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  13% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(0, 0);
+  }
+  14%, 21% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  25% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  30% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  35%, 45% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * -1%));
+  }
+  40% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * 1%));
+  }
+  50% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(0, 0);
+  }
+  55% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  60% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(0, 0);
+  }
+  31%, 61%, 100% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    -webkit-clip-path: var(--clip-one);
+            clip-path: var(--clip-one);
+  }
+  2%, 8% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  6% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  9% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(0, 0);
+  }
+  10% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  13% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(0, 0);
+  }
+  14%, 21% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  25% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  30% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  35%, 45% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * -1%));
+  }
+  40% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * 1%));
+  }
+  50% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(0, 0);
+  }
+  55% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  60% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(0, 0);
+  }
+  31%, 61%, 100% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+  }
+}
+@keyframes glitch {
+  0% {
+    -webkit-clip-path: var(--clip-one);
+            clip-path: var(--clip-one);
+  }
+  2%, 8% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  6% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  9% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(0, 0);
+  }
+  10% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  13% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(0, 0);
+  }
+  14%, 21% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  25% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  30% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  35%, 45% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * -1%));
+  }
+  40% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * 1%));
+  }
+  50% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(0, 0);
+  }
+  55% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  60% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(0, 0);
+  }
+  31%, 61%, 100% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+  }
+}
 .site-logo {
   width: 170px;
 }
@@ -240,6 +466,81 @@ figcaption {
   margin: 20px 0;
 }
 
+@keyframes glitch {
+  0% {
+    -webkit-clip-path: var(--clip-one);
+            clip-path: var(--clip-one);
+  }
+  2%, 8% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  6% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  9% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(0, 0);
+  }
+  10% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  13% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(0, 0);
+  }
+  14%, 21% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  25% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  30% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  35%, 45% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * -1%));
+  }
+  40% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * 1%));
+  }
+  50% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(0, 0);
+  }
+  55% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  60% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(0, 0);
+  }
+  31%, 61%, 100% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+  }
+}
 .btn-primary {
   border: 1px solid #444;
   width: 200px;
@@ -252,6 +553,9 @@ figcaption {
   border-right: 6px solid #023047;
   margin: 5px;
   background-color: #f6bd60;
+}
+.btn-primary:hover {
+  border-right: 6px solid #d62828;
 }
 
 .btn-secondary {
@@ -268,6 +572,9 @@ figcaption {
   background-color: #393d3f;
   color: #fff;
 }
+.btn-secondary:hover {
+  border-right: 6px solid #d62828;
+}
 
 .btn-success {
   border: 1px solid #444;
@@ -282,6 +589,9 @@ figcaption {
   margin: 5px;
   background-color: #386641;
   color: #fff;
+}
+.btn-success:hover {
+  border-right: 6px solid #d62828;
 }
 
 .btn-danger {
@@ -298,6 +608,9 @@ figcaption {
   background-color: #bc4749;
   color: #fff;
 }
+.btn-danger:hover {
+  border-right: 6px solid #d62828;
+}
 
 .btn-warning {
   border: 1px solid #444;
@@ -312,7 +625,160 @@ figcaption {
   margin: 5px;
   background-color: #ff9e00;
 }
+.btn-warning:hover {
+  border-right: 6px solid #d62828;
+}
 
+@keyframes glitch {
+  0% {
+    -webkit-clip-path: var(--clip-one);
+            clip-path: var(--clip-one);
+  }
+  2%, 8% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  6% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  9% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(0, 0);
+  }
+  10% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  13% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(0, 0);
+  }
+  14%, 21% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  25% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  30% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  35%, 45% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * -1%));
+  }
+  40% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * 1%));
+  }
+  50% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(0, 0);
+  }
+  55% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  60% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(0, 0);
+  }
+  31%, 61%, 100% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+  }
+}
+@keyframes glitch {
+  0% {
+    -webkit-clip-path: var(--clip-one);
+            clip-path: var(--clip-one);
+  }
+  2%, 8% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  6% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  9% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(0, 0);
+  }
+  10% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  13% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(0, 0);
+  }
+  14%, 21% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  25% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  30% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  35%, 45% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * -1%));
+  }
+  40% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * 1%));
+  }
+  50% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(0, 0);
+  }
+  55% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  60% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(0, 0);
+  }
+  31%, 61%, 100% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+  }
+}
 .site-logo {
   width: 170px;
 }
@@ -717,6 +1183,81 @@ h3 {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+  }
+}
+@keyframes glitch {
+  0% {
+    -webkit-clip-path: var(--clip-one);
+            clip-path: var(--clip-one);
+  }
+  2%, 8% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  6% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  9% {
+    -webkit-clip-path: var(--clip-two);
+            clip-path: var(--clip-two);
+    transform: translate(0, 0);
+  }
+  10% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  13% {
+    -webkit-clip-path: var(--clip-three);
+            clip-path: var(--clip-three);
+    transform: translate(0, 0);
+  }
+  14%, 21% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  25% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  30% {
+    -webkit-clip-path: var(--clip-five);
+            clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  35%, 45% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * -1%));
+  }
+  40% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * 1%));
+  }
+  50% {
+    -webkit-clip-path: var(--clip-six);
+            clip-path: var(--clip-six);
+    transform: translate(0, 0);
+  }
+  55% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  60% {
+    -webkit-clip-path: var(--clip-seven);
+            clip-path: var(--clip-seven);
+    transform: translate(0, 0);
+  }
+  31%, 61%, 100% {
+    -webkit-clip-path: var(--clip-four);
+            clip-path: var(--clip-four);
   }
 }
 .contact {
