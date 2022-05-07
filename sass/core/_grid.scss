@@ -1,9 +1,26 @@
+@import "../layout/all";
+
 .row {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .col-6 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        
+        @media screen and (min-width: 992px) {
+            flex: 2;
+
+        }
+    }
+
 }
-.col-6 {
-    width: 50%;
-}
+
+
 
 .divider {
     border-top: 1px solid #999;

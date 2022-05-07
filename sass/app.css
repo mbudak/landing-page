@@ -54,12 +54,182 @@ a {
   text-decoration: none;
 }
 
-.row {
-  display: flex;
+.site-logo {
+  width: 170px;
 }
 
-.col-6 {
-  width: 50%;
+.navigation {
+  max-width: 992px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #f6bd60;
+  border: 1px solid #ddd;
+}
+
+.brand {
+  width: auto;
+  height: 100%;
+  float: left;
+  margin: 0 0 0 5%;
+}
+
+.menu {
+  width: 60%;
+  height: 100%;
+  float: right;
+}
+.menu ul {
+  width: 100%;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+}
+.menu ul a {
+  padding: 0 10px;
+  height: inherit;
+  color: #222;
+  display: inline-block;
+}
+.menu ul a:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+#menuToggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .menu {
+    width: 100%;
+    height: auto;
+  }
+  .menu ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+  .menu ul a {
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    background-color: #f6bd60;
+    padding: 2px 0px 2px 5%;
+  }
+
+  .menu-icon {
+    width: 100px;
+    height: inherit;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 60px;
+  }
+
+  #menuToggle:checked ~ ul {
+    max-height: 200px;
+  }
+
+  .menu-icon i {
+    font-size: 1.7em;
+  }
+}
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  margin-top: calc(100vh + 40px);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f6bd60;
+  min-height: 60px;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 4px dashed #444;
+}
+
+.section-title {
+  font-size: 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: #f6bd60;
+  line-height: 3rem;
+}
+
+.project-img {
+  max-width: 420px;
+}
+
+.masonry {
+  -moz-column-count: 4;
+       column-count: 4;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+figure > img {
+  grid-row: 1/-1;
+  grid-column: 1;
+}
+
+figure a {
+  color: black;
+  text-decoration: none;
+}
+
+figcaption {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2em 0.5em;
+  justify-self: start;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.row .col-6 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+@media screen and (min-width: 992px) {
+  .row .col-6 {
+    flex: 2;
+  }
 }
 
 .divider {
@@ -67,6 +237,20 @@ a {
   display: block;
   height: 10px;
   margin: 20px 0;
+}
+
+.btn {
+  border: 1px solid #444;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: medium;
+  line-height: 40px;
+}
+
+.btn-primary {
+  background-color: #f6bd60;
 }
 
 .site-logo {
@@ -171,6 +355,9 @@ footer {
   width: 100%;
   background-color: #f6bd60;
   min-height: 60px;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 4px dashed #444;
 }
 
 .section-title {
@@ -180,6 +367,50 @@ footer {
   top: 0px;
   background-color: #f6bd60;
   line-height: 3rem;
+}
+
+.project-img {
+  max-width: 420px;
+}
+
+.masonry {
+  -moz-column-count: 4;
+       column-count: 4;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+figure > img {
+  grid-row: 1/-1;
+  grid-column: 1;
+}
+
+figure a {
+  color: black;
+  text-decoration: none;
+}
+
+figcaption {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2em 0.5em;
+  justify-self: start;
 }
 
 h1 {
