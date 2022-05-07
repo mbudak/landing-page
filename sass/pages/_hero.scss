@@ -13,7 +13,7 @@
 
         clip: rect(0, auto, auto, 0);
 
-        background-image: url("/assets/img/hero.jpg");
+        background-image: url("./assets/img/hero.jpg");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -43,7 +43,7 @@
             width: 819px;
             height: 1621px;
 
-            background-image: url("/assets/img/cloud-2.png");
+            background-image: url("./assets/img/cloud-2.png");
         }
         &--secondary {
             top: 0;
@@ -53,7 +53,7 @@
             height: 500px;
 
             background-size: 300px auto;
-            background-image: url("/assets/img/cloud-1.png");
+            background-image: url("./assets/img/cloud-1.png");
         }
     }
     &__title {
