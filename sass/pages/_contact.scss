@@ -6,8 +6,9 @@
         }
     }
     img {
-        height: 200px;
+        height: 250px;
         width: auto;
-        
+        /* For fun I just added a shadow for transparent image*/
+        filter: drop-shadow(1px 5px 15px #666);
     }
 }

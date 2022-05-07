@@ -62,6 +62,13 @@ a {
   width: 50%;
 }
 
+.divider {
+  border-top: 1px solid #999;
+  display: block;
+  height: 10px;
+  margin: 20px 0;
+}
+
 .site-logo {
   width: 170px;
 }
@@ -164,6 +171,15 @@ footer {
   width: 100%;
   background-color: #f6bd60;
   min-height: 60px;
+}
+
+.section-title {
+  font-size: 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: #f6bd60;
+  line-height: 3rem;
 }
 
 h1 {
@@ -408,8 +424,10 @@ h1 {
 }
 
 .contact img {
-  height: 200px;
+  height: 250px;
   width: auto;
+  /* For fun I just added a shadow for transparent image*/
+  filter: drop-shadow(1px 5px 15px #666);
 }
 
 body {

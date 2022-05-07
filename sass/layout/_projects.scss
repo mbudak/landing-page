@@ -1,0 +1,10 @@
+@use "../core/variables" as v;
+
+.section-title {
+    font-size: 2rem;
+        position: sticky;
+        top: 0px;
+        background-color: v.$primary-color;
+        line-height: 3rem;
+      
+}
